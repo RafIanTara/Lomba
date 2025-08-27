@@ -1,7 +1,7 @@
 const artikelData = [
   {
-    judul: "Membagikan informasi positif melalui media digital.",
-    deskripsi: "Bagaimana cara membedakan informasi positif dan negatif di media digital.",
+    judul: "Bagaimana cara membedakan informasi positif dan negatif di media digital.",
+    deskripsi: "Artikel 1",
     isi: `
       <p>
         Pada zaman sekarang kan banyak banget nih informasi yang kita dapat dari media digital nah kadangkan kita bingung nih bagaimana cara membedakan informasi positif dan negatifnya.
@@ -17,8 +17,8 @@ const artikelData = [
     `
   },
   {
-    judul: "Membagikan informasi positif melalui media digital.",
-    deskripsi: "tips praktis membagikan informasi positif melalui media digital.",
+    judul: "tips praktis membagikan informasi positif melalui media digital.",
+    deskripsi: "Artikel 2",
     isi: `
       <p>
         <li><b>1. Gunakan bahasa yang sopan</b></li>
@@ -31,8 +31,8 @@ const artikelData = [
     `
   },
   {
-    judul: "Membagikan informasi positif melalui media digital.",
-    deskripsi: "bijak dalam memilih konten.",
+    judul: "bijak dalam memilih konten.",
+    deskripsi: "Artikel 3",
     isi: `
       <p>
         <li><b>1. unsur konten</b></li>
@@ -70,13 +70,13 @@ function renderIsi(idx) {
   const container = document.querySelector('.profile-container');
   if (!container) return;
   const art = artikelData[idx];
-  container.innerHTML = `
-    <button class="btn-artikel" id="backBtn">&larr; Kembali ke Daftar</button>
-    <div class="artikel-item">
-      <h2>${art.judul}</h2>
-      ${art.isi}
-    </div>
-  `;
+container.innerHTML = `
+  <button class="btn-artikel" id="backBtn">&larr; Kembali ke Daftar</button>
+  <div class="artikel-detail">
+    <h2>${art.judul}</h2>
+    ${art.isi}
+  </div>
+`;
   document.getElementById('backBtn').onclick = () => {
     renderList();
     attachListeners();

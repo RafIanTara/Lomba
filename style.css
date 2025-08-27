@@ -208,8 +208,71 @@ nav_title {
     max-width: 320px;
   }
 }
+.team-bio {
+  font-size: 0.97em;
+  color: #444;
+  margin: 8px 0 6px 0;
+}
+
+.team-github {
+  display: inline-block;
+  background: #24292e;
+  color: #fff;
+  padding: 5px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.97em;
+  transition: background 0.2s;
+}
+
+.team-github:hover {
+  background: #0366d6;
+}
 @media (max-width: 600px) {
   .artikel-item {
     padding: 12px 6px;
   }
+}
+
+.artikel-detail {
+  background: #fff;
+  border: 2px solid #1c0fc7;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(44,44,100,0.10);
+  padding: 32px 24px;
+  margin: 32px auto;
+  max-width: 700px;
+  color: #222;
+  animation: fadeIn 0.5s;
+}
+
+.artikel-detail h2 {
+  color: #1c0fc7;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 2em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.artikel-detail p,
+.artikel-detail ul,
+.artikel-detail ol {
+  font-size: 1.13em;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.artikel-detail ul, .artikel-detail ol {
+  padding-left: 24px;
+}
+
+.artikel-detail li {
+  margin-bottom: 8px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to   { opacity: 1; transform: translateY(0);}
 }
