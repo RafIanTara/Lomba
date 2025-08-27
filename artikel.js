@@ -1,10 +1,12 @@
 const artikelData = [
   {
-    judul: "Gong Golek",
-    deskripsi: "Gong Golek.",
+    judul: "Membagikan informasi positif",
+    deskripsi: "Kekuatan Informasi Positif di Era Digital",
     isi: `
       <p>
-        Gong Golek
+       1.Mengulas bagaimana konten positif (edukasi, motivasi, inspirasi) bisa mengubah pola pikir masyarakat.
+
+2. Menekankan dampak psikologis dari informasi positif terhadap pengguna internet.
       </p>
     `
   },
