@@ -71,9 +71,11 @@ nav_title {
 
 .artikel-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;      /* horizontal */
   gap: 24px;
   margin-top: 24px;
+  justify-content: center;  /* tengah */
+  flex-wrap: wrap;          /* biar responsif di layar kecil */
 }
 
 .artikel-item {
@@ -82,6 +84,11 @@ nav_title {
   border-radius: 8px;
   padding: 20px 18px;
   box-shadow: 0 2px 8px rgba(44,44,100,0.04);
+  width: 260px;             /* atur lebar box */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .artikel-item h3 {
@@ -95,8 +102,112 @@ nav_title {
   color: #333;
 }
 
+.btn-artikel {
+  background: #4CAF50;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+  border: none;
+  display: inline-block;
+  margin-top: auto;
+}
 
+.btn-artikel:hover {
+  background: #388e3c;
+}
 
+/* Responsive: stack ke bawah di layar kecil */
+@media (max-width: 900px) {
+  .artikel-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.welcome-container {
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(44,44,100,0.08);
+  padding: 32px 24px;
+  text-align: start;
+  border: 1px solid #e0e0f0;
+}
+
+.welcome-container h1 {
+  color: #1c0fc7;
+  margin-bottom: 18px;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.welcome-container p {
+  color: #333;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.team-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.team-item {
+  background: #fff;
+  border: 1px solid #e0e0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(44,44,100,0.06);
+  padding: 18px 16px;
+  width: 180px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  border: 3px solid #1c0fc7;
+}
+
+.team-name {
+  font-size: 1.05em;
+  margin-bottom: 4px;
+}
+
+.team-role {
+  color: #4CAF50;
+  font-size: 0.98em;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .team-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .team-item {
+    width: 90vw;
+    max-width: 320px;
+  }
+}
 @media (max-width: 600px) {
   .artikel-item {
     padding: 12px 6px;
