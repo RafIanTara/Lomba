@@ -18,6 +18,16 @@
   font-weight: bold;
   letter-spacing: 1px;
 }
+profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9ff;
+  border: 1px solid #e0e0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44,44,100,0.04);
+  text-align: center;
+}
 
 .nav-links a {
   background: #4CAF50;
@@ -85,23 +95,8 @@ nav_title {
   color: #333;
 }
 
-.btn-artikel {
-  background: #4CAF50;
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s;
-  border: none;
-  display: inline-block;
-}
 
-.btn-artikel:hover {
-  background: #388e3c;
-}
 
-/* Responsive */
 @media (max-width: 600px) {
   .artikel-item {
     padding: 12px 6px;
